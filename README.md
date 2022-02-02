@@ -1,13 +1,17 @@
 # @abozhilov/set-utils - v1.0.0
 
-Small utility library for working with built-in `Set`.
-Entirely written in TypeScript.
+Utility library for working with built-in `Set`.
+
+Written in TypeScript.
 
 ## Installation
+
+### npm
 ```
     npm install @abozhilov/set-utils
 ```
 
+### yarn
 ```
     yarn add @abozhilov/set-utils
 ```
