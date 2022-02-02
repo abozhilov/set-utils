@@ -1,6 +1,6 @@
 # @abozhilov/set-utils - v1.0.0
 
-Utility library for working with built-in `Set`.
+Utility library for working with the built-in `Set`.
 
 Written in TypeScript.
 
