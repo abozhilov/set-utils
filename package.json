@@ -6,6 +6,10 @@
   "main": "dist/src/index.js",
   "author": "Asen Bozhilov",
   "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/abozhilov/set-utils"
+  },
   "scripts": {
     "clean": "shx rm -rf dist",
     "watch": "tsc --watch",
