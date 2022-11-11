@@ -78,6 +78,27 @@ export function isStrictSuperset(setA, setB) {
     return isStrictSubset(setB, setA);
 }
 /**
+ * Checks whether `setA` is structurally equal to `setB`.
+ *
+ * ```ts
+ *  assert.equal(
+ *      isEqual(new Set([1, 2, 3]), new Set([2, 3, 1])),
+ *      true
+ *  );
+ * ```
+ *
+ * ```ts
+ *  assert.equal(
+ *      isEqual(new Set([1, 2, 3]), new Set([1, 2])),
+ *      false
+ *  );
+ * ```
+ */
+export function isEqual(setA, setB) {
+    return (setA.size === setB.size &&
+        new Set([...setA, ...setB]).size === setA.size);
+}
+/**
  * Returns new set which contains all elements from each set.
  * The operation is denoted by `setA ⋃ setB`.
  *

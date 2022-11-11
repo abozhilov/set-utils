@@ -62,6 +62,24 @@ export declare function isSuperset<T>(setA: Set<T>, setB: Set<T>): boolean;
  */
 export declare function isStrictSuperset<T>(setA: Set<T>, setB: Set<T>): boolean;
 /**
+ * Checks whether `setA` is structurally equal to `setB`.
+ *
+ * ```ts
+ *  assert.equal(
+ *      isEqual(new Set([1, 2, 3]), new Set([2, 3, 1])),
+ *      true
+ *  );
+ * ```
+ *
+ * ```ts
+ *  assert.equal(
+ *      isEqual(new Set([1, 2, 3]), new Set([1, 2])),
+ *      false
+ *  );
+ * ```
+ */
+export declare function isEqual<T>(setA: Set<T>, setB: Set<T>): boolean;
+/**
  * Returns new set which contains all elements from each set.
  * The operation is denoted by `setA ⋃ setB`.
  *

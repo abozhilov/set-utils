@@ -23,6 +23,7 @@ Written in TypeScript.
 - [isStrictSubset](README.md#isstrictsubset)
 - [isSuperset](README.md#issuperset)
 - [isStrictSuperset](README.md#isstrictsuperset)
+- [isEqual](README.md#isequal)
 - [union](README.md#union)
 - [intersect](README.md#intersect)
 - [difference](README.md#difference)
@@ -63,7 +64,7 @@ The operation is denoted by `setA ⊆ setB`.
 
 #### Defined in
 
-index.ts:12
+[index.ts:12](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L12)
 
 ___
 
@@ -107,7 +108,7 @@ The operation is denoted by `setA ⊂ setB`.
 
 #### Defined in
 
-index.ts:41
+[index.ts:41](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L41)
 
 ___
 
@@ -144,7 +145,7 @@ The operation is denoted by `setA ⊇ setB`.
 
 #### Defined in
 
-index.ts:60
+[index.ts:60](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L60)
 
 ___
 
@@ -188,7 +189,50 @@ The operation is denoted by `setA ⊃ setB`.
 
 #### Defined in
 
-index.ts:82
+[index.ts:82](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L82)
+
+___
+
+### isEqual
+
+▸ **isEqual**<`T`\>(`setA`, `setB`): `boolean`
+
+Checks whether `setA` is structurally equal to `setB`.
+
+```ts
+ assert.equal(
+     isEqual(new Set([1, 2, 3]), new Set([2, 3, 1])),
+     true
+ );
+```
+
+```ts
+ assert.equal(
+     isEqual(new Set([1, 2, 3]), new Set([1, 2])),
+     false
+ );
+```
+
+#### Type parameters
+
+| Name |
+| :------ |
+| `T` |
+
+#### Parameters
+
+| Name | Type |
+| :------ | :------ |
+| `setA` | `Set`<`T`\> |
+| `setB` | `Set`<`T`\> |
+
+#### Returns
+
+`boolean`
+
+#### Defined in
+
+[index.ts:103](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L103)
 
 ___
 
@@ -233,7 +277,7 @@ The operation is denoted by `setA ⋃ setB`.
 
 #### Defined in
 
-index.ts:105
+[index.ts:129](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L129)
 
 ___
 
@@ -278,7 +322,7 @@ The operation is denoted by `setA ⋂ setB`.
 
 #### Defined in
 
-index.ts:139
+[index.ts:163](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L163)
 
 ___
 
@@ -323,7 +367,7 @@ The operation is denoted by `setA \ setB`.
 
 #### Defined in
 
-index.ts:178
+[index.ts:202](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L202)
 
 ___
 
@@ -368,4 +412,4 @@ The operation is denoted by `setA ∆ setB`.
 
 #### Defined in
 
-index.ts:217
+[index.ts:241](https://github.com/abozhilov/set-utils/blob/7f27c6d/ts/src/index.ts#L241)
