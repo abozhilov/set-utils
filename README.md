@@ -1,4 +1,4 @@
-# @abozhilov/set-utils - v1.0.0
+# @abozhilov/set-utils - v1.1.1
 
 Utility library for working with the built-in `Set`.
 
