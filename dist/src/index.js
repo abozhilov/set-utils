@@ -95,8 +95,7 @@ export function isStrictSuperset(setA, setB) {
  * ```
  */
 export function isEqual(setA, setB) {
-    return (setA.size === setB.size &&
-        new Set([...setA, ...setB]).size === setA.size);
+    return setA.size === setB.size && isSubset(setA, setB);
 }
 /**
  * Returns new set which contains all elements from each set.

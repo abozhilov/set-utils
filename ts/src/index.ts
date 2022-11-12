@@ -101,10 +101,7 @@ export function isStrictSuperset<T>(setA:Set<T>, setB:Set<T>): boolean {
  * ```
  */
 export function isEqual<T>(setA:Set<T>, setB:Set<T>): boolean {
-    return (
-        setA.size === setB.size && 
-        new Set([...setA, ...setB]).size === setA.size
-    );
+    return setA.size === setB.size && isSubset(setA, setB);
 }
 
 /**
